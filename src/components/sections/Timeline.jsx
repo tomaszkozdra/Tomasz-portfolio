@@ -14,10 +14,10 @@ const TimelineDemo = () => {
           </p>
           <div className="grid grid-cols-2 gap-4">
             {[
-              assets.startup1,
-              assets.startup2,
-              assets.startup3,
-              assets.startup4,
+              assets.fizykaf1,
+              assets.fizykaf2,
+              assets.fizykaf3,
+              assets.fizykaf4,
             ].map((img, idx) => (
               <img
                 key={idx}
@@ -46,18 +46,16 @@ const TimelineDemo = () => {
             kluczowe w dalszym rozwoju mojej kariery.
           </p>
           <div className="grid grid-cols-2 gap-4">
-            {[assets.featuresSection, assets.proBentoGrids, assets.cards].map(
-              (img, idx) => (
-                <img
-                  key={idx}
-                  src={img}
-                  alt="template"
-                  width="500"
-                  height="500"
-                  className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-lg"
-                />
-              )
-            )}
+            {[assets.code, assets.code2].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt="template"
+                width="500"
+                height="500"
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-lg"
+              />
+            ))}
           </div>
         </div>
       ),

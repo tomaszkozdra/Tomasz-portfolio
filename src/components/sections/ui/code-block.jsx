@@ -34,7 +34,7 @@ const CodeBlock = ({
     : highlightLines;
 
   return (
-    <div className="relative w-full rounded-lg bg-slate-900 p-4 font-mono text-sm">
+    <div className="relative w-full rounded-lg bg-slate-900 p-4 sm:p-2 smfont-mono text-sm">
       <style jsx>{`
         /* Stylizacja paska przewijania */
         ::-webkit-scrollbar {
