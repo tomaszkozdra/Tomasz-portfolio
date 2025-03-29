@@ -11,18 +11,20 @@ const PortfolioHeader = () => {
     <div>
       <h1>Jestem Tomasz</h1>
       <p>Mam 17 lat i jestem Full Stack Developerem.</p>
+      <p>Programuję w, między innymi:</p>
       <ul>
         <li>HTML</li>
-        <li>JS</li>
-        <li>MERN stack:</li>
-        <ul>
-          <li>Tailwind</li>
-          <li>Vite</li>
-          <li>React</li>
-          <li>Mongoose</li>
-          <li>Cloudinary</li>
-          <li>i inne</li>
-        </ul>
+        <li>JavaScript</li>
+        <li>MERN stack:
+          <ul>
+            <li>Tailwind</li>
+            <li>Vite</li>
+            <li>React</li>
+            <li>Mongoose</li>
+            <li>Cloudinary</li>
+            <li>i inne</li>
+          </ul>
+        </li>
       </ul>
     </div>
   );

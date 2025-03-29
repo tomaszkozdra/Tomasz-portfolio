@@ -23,6 +23,19 @@ const toastVariants = {
   },
 };
 
+const LoadingIndicator = () => {
+  const [dots, setDots] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots((prev) => (prev.length < 3 ? prev + "." : ""));
+    }, 500);
+    return () => clearInterval(interval);
+  }, []);
+
+  return <span>Wysyłanie{dots}</span>;
+};
+
 const ContactUsForm = () => {
   const [formValues, setFormValues] = useState({
     name: "",
@@ -31,6 +44,7 @@ const ContactUsForm = () => {
   });
   const [error, setError] = useState("");
   const [toastMessage, setToastMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormValues((prev) => ({
@@ -47,6 +61,7 @@ const ContactUsForm = () => {
       return;
     }
     setError("");
+    setIsLoading(true);
     console.log("Formularz wysłany");
 
     emailjs
@@ -61,9 +76,11 @@ const ContactUsForm = () => {
           console.log(result.text);
           setFormValues({ name: "", email: "", message: "" });
           setToastMessage("Wiadomość wysłana pomyślnie!");
+          setIsLoading(false);
         },
         (error) => {
           console.log(error.text);
+          setIsLoading(false);
         }
       );
   };
@@ -152,11 +169,12 @@ const ContactUsForm = () => {
           <motion.button
             className="group/btn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
             type="submit"
+            disabled={isLoading}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Wyślij &rarr;
+            {isLoading ? <LoadingIndicator /> : <>Wyślij &rarr;</>}
             <BottomGradient />
           </motion.button>
 
