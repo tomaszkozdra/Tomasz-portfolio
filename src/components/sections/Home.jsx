@@ -174,9 +174,8 @@ export default function Home() {
           </NavLink>
         </div>
       </div>
-
-      <TimelineDemo />
       <BentoGridThirdDemo />
+      <TimelineDemo />
       <ContainerScroll />
     </div>
   );
