@@ -25,7 +25,7 @@ const Timeline = ({ data }) => {
   return (
     <div className="w-full bg-black font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
+        <h2 className="text-lg md:text-4xl font-bold mb-3 text-white dark:text-white max-w-4xl">
           Moja przygoda z programowaniem
         </h2>
         <p className="text-neutral-300 text-sm md:text-base max-w-sm">
