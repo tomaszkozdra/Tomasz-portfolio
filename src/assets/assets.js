@@ -7,6 +7,8 @@ import fizykaf1 from "./fizykaf1.png";
 import fizykaf2 from "./fizykaf2.png";
 import fizykaf3 from "./fizykaf3.png";
 import fizykaf4 from "./fizykaf4.png";
+import tuzjemy1 from "./tuzjemy1.png";
+import tuzjemy2 from "./tuzjemy2.png";
 import code from "./code.jpg";
 import code2 from "./code2.jpg";
 
@@ -22,4 +24,6 @@ export const assets = {
   fizykaf4,
   code,
   code2,
+  tuzjemy1,
+  tuzjemy2,
 };
