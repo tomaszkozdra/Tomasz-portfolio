@@ -65,7 +65,7 @@ const TimelineDemo = () => {
       content: (
         <div>
           <p className="text-neutral-300 text-xs md:text-sm font-normal mb-4">
-            Ostatni projekt: System obsługi rezerwacji dla barbershopu.
+            System obsługi rezerwacji dla barbershopu.
           </p>
           <p className="text-neutral-300 text-xs md:text-sm font-normal mb-4">
             Zrealizowano pełen panel klienta, panel administratora oraz panel
@@ -108,7 +108,7 @@ const TimelineDemo = () => {
       ),
     },
     {
-      title: "Aplikacja dla restauracji TuZjemy.pl (in progress)",
+      title: "Aplikacja TuZjemy.pl (in progress)",
       content: (
         <div>
           <div className="mb-8">

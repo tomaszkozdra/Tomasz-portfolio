@@ -10,7 +10,7 @@ export default function HeroScrollDemo() {
         titleComponent={
           <>
             <h1 className="md:text-[6rem] text-4xl font-semibold text-black dark:text-white leading-none">
-              Ostatni Projekt
+              Projekt FizykaFascynuje
             </h1>
           </>
         }
