@@ -107,6 +107,41 @@ const TimelineDemo = () => {
         </div>
       ),
     },
+    {
+      title: "Aplikacja dla restauracji TuZjemy.pl (in progress)",
+      content: (
+        <div>
+          <div className="mb-8">
+            {[
+              "- Obsługa subskrypcji kulinarnych",
+              "- System rezerwacji i składania zamówień",
+              "- Integracja newsletterów i automatycznego mailingu",
+              "- Bezpieczne logowanie oraz odzyskiwanie haseł",
+              "- Panele administracyjne i zarządzania treścią",
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            {[assets.tuzjemy1, assets.tuzjemy2].map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt="TuZjemy project"
+                width="500"
+                height="500"
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-lg"
+              />
+            ))}
+          </div>
+        </div>
+      ),
+    },
   ];
 
   return (
